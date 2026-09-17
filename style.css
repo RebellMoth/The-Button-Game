@@ -1,0 +1,134 @@
+body {
+    background: #000000;
+    color: #ffff;
+    font-family: 'Bodoni Moda SC', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+#game-area {
+    width: 650px;
+    height: 650px;
+    border: 2px solid #e1dddd;
+    background-color: #1c1b1b;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+
+}
+#game-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 650px;
+    margin: 0 auto;
+    align-items: center;
+}
+#score {
+    justify-self: start;
+}
+#timer{
+    justify-self: end;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(#ff1515 0%, #3d3838 0%);
+    border: 1px solid #adadad;
+}
+.button-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: start;
+}
+button {
+    background-color: #d22323;
+    color: #c6c2c2;
+    border-radius: 50%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    margin: 20px;  
+    box-shadow: 0px 10px 8px #290101;
+}
+button:hover {
+    background-color: #9e1919;
+    box-shadow: 0px 6px 8px #2b0505;
+}
+#instruction {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+#feedback {
+    color: #ff8e0e;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.hidden-button {
+    opacity: 0.15;
+}
+#name-input {
+    background-color: #1c1b1b;
+    color: #adadad;
+    border: 2px solid #adadad;
+    font-family: 'Boboni Moda SC', serif;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    width: 250px;
+}
+#name-input:focus {
+    border-color: #ff8e0e;
+}
+#end-container {
+    visibility: hidden;
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1b1b;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#game-over-screen {
+    font-size: 40px;
+    font-weight: bold;
+    color: #adadad;
+    text-align: center;
+}
+#final-score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9e1919;
+    text-align: center;
+}
